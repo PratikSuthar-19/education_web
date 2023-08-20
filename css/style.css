@@ -361,7 +361,7 @@ header {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 50%;
+  left: 46%;
   top: -1.5rem;
   transform: rotate(45deg);
   /* background-color: var(--color-primary); */
@@ -577,3 +577,63 @@ footer ul li :hover {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+ /* <==============media query for mobile less than 600px=============> */
+ @media screen and (max-width : 600px) {
+  
+ .container{
+  width: var(--container-width-sm);
+
+ }
+
+ /* <==============navbar============> */
+
+ .nav_menu{
+  right: 3%;
+ }
+
+  /* <==============header===========> */
+  header{
+    height: 100vh;
+  }
+  .header_container{
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+   
+  }
+  .header_left p{
+    margin-bottom: 1.3rem;
+  }
+  /* <==============catogories===========> */
+  .categories_right{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+  .categorie {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+   /* <==============cources===========> */
+   .cources_container{
+    grid-template-columns: 1fr;
+   }
+   
+   /* <==============cources===========> */
+ .testinomial{
+  padding: 1.2rem;
+ }
+  /* <==============footer==========> */
+  .footer_container{
+    grid-template-columns: 1fr;
+   
+    gap: 2rem;
+  }
+  .footer1 p{
+    margin: 1rem auto;
+  }
+
+  footer ul li {
+    margin-bottom: 0.2rem;
+  }
+ }

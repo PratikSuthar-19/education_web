@@ -20,3 +20,20 @@ faqs.forEach( faq =>{
         }
     })
 })
+
+const nav_menu = document.querySelector('.nav_menu');
+const open_btn = document.querySelector('.open_menu_btn');
+const close_btn = document.querySelector('.close_menu_btn');
+
+open_btn.addEventListener('click', ()=>{
+     nav_menu.style.display ="flex";
+     open_btn.style.display="none";
+     close_btn.style.display="inline-block";
+})
+
+close_btn.addEventListener('click', ()=>{
+    nav_menu.style.display ="none";
+    open_btn.style.display="inline-block";
+    close_btn.style.display="none";
+
+})

@@ -123,3 +123,51 @@
 .team_member:hover .team_member_socials {
     right: 0;
 }
+
+
+
+/* <===============media query for less than 1024px===========> */
+
+@media screen and (max-width :1024px) {
+    .about_achivments{
+        margin-top: 2rem;
+    }
+    .about_achivments_container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .about_achivments_left{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team_container{
+        grid-template-columns: repeat( 3, 1fr);
+        gap: 1.5rem;
+    }
+    .team_member{
+        padding: 1rem;
+    }
+
+    
+}
+
+/* * <===============media query for less than 600px===========> */ 
+
+@media screen and (max-width :600px){
+    .achivments_cards{
+        grid-template-columns: 1fr 1fr;
+        gap :0.7rem;
+
+    }
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        gap:0.7rem;
+    }
+    .team_member{
+        padding: 0;
+    }
+    .team_member p{
+        margin-bottom: 1.5rem;
+    }
+} 
